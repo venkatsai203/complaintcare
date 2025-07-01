@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ComplaintCare - Signup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-title">ComplaintCare</div> 
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">SignUp</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="signup-container"> 
+    <h2>SignUp For Registering the Complaint</h2>
+    <p>Please enter your Details</p>
+    <form id="signupForm"> 
+      <input type="text" id="name" placeholder="Full Name" required /> 
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="tel" id="mobile" placeholder="Mobile No." required />
+    
+      <select id="userType" required>
+        <option value="">Select User</option>
+        <option value="citizen">Citizen</option>
+        <option value="admin">Admin</option>
+      </select>
+      <label for="userType">Select User Type</label>
+
+      <button type="submit">Register</button>
+    </form>
+    <div id="responseMessage"></div> 
+  </div> 
+
+  <script src="script.js"></script>
+</body>
+</html>
